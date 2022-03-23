@@ -7,3 +7,4 @@ edition = "2021"
 
 [dependencies]
 neuronika = { git = "https://github.com/neuronika/neuronika" }
+ndarray = "*"

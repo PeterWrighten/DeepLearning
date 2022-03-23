@@ -1,4 +1,5 @@
 use neuronika;
+use ndarray::array;
 
 ///! whole variable is f32 type. on the other word, only f32 type available.
 fn main() {
@@ -8,5 +9,9 @@ fn main() {
     let ones_variable = neuronika::ones(shape);
     println!("Ones variable: \n{}", ones_variable);
     let constant_variable = neuronika::full(shape, 7.);
-    print!("Full variable: \n{}", constant_variable);
+    println!("Full variable: \n{}", constant_variable);
+    let array = array![1., 2.];
+    let x_ndarray = neuronika::from_ndarray(array);
+    println!("From ndarray: \n {}", x_ndarray);
+
 }
